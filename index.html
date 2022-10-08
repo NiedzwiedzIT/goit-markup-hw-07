@@ -57,7 +57,7 @@
     <section class="section-hero img-hero">
       <div class="container">
         <h1 class="section-hero__title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="section-modal__btm" data-modal-open>Замовити послугу</button>
+        <button type="button" class="modal__btm" data-modal-open>Замовити послугу</button>
 
       </div>
     </section>
@@ -123,19 +123,19 @@
         <ul class="section__works">
           <li class="section__item">
             <div class="item-works__list">
-              <img src="./images/aboutimg1.jpg" class="item-works__img" width="370" alt="box1" />
+              <img src="./images/aboutimg1.jpg" class="section__image" width="370" alt="box1" />
               <p class="item-works__description">Десктопні додатки</p>
             </div>
           </li>
           <li class="section__item">
             <div class="item-works__list">
-              <img src="./images/aboutimg2.jpg" class=" item-works__img" width="370" alt="box2" />
+              <img src="./images/aboutimg2.jpg" class="section__image" width="370" alt="box2" />
               <p class="item-works__description">Мобільні додатки</p>
             </div>
           </li>
           <li class="section__item">
             <div class="item-works__list">
-              <img src="./images/aboutimg3.jpg" class=" item-works__img" width="370" alt="box3" />
+              <img src="./images/aboutimg3.jpg" class="section__image" width="370" alt="box3" />
               <p class="item-works__description">Дизайнерські рішення</p>
             </div>
           </li>
@@ -189,7 +189,8 @@
           </li>
           <!-- Frontend Developer -->
           <li class="section__avatar">
-            <img src="./images/imgfrontenddeveloper-min.jpg" class="section__image" width="270" alt="Frontend Developer" />
+            <img src="./images/imgfrontenddeveloper-min.jpg" class="section__image" width="270"
+              alt="Frontend Developer" />
 
             <div class="section__info">
               <h3 class="section__name">Ольга Рєпіна</h3>
@@ -373,16 +374,17 @@
           <ul class="footer-auth__list">
 
             <li class="footer-auth__item">
-              <a class="footer-auth__maps" href="https://goo.gl/maps/EwNaGcTpWCkgvGho6" rel="noopener noreferrer nofollow"
-                target="_blank">м. Київ, пр-т Лесі Українки, 26</a>
+              <a class="footer-auth__maps" href="https://goo.gl/maps/EwNaGcTpWCkgvGho6"
+                rel="noopener noreferrer nofollow" target="_blank">м. Київ, пр-т Лесі Українки, 26</a>
             </li>
-            
+
             <li class="footer-auth__item">
               <a href="mailto:info@devstudio.com" class="footer-auth__link" rel="noopener noreferrer nofollow"
                 target="_blank">info@devstudio.com</a>
             </li>
 
-            <li class="footer-auth__item"><a href="tel:+380961111111" class="footer-auth__link">+38 096 111 11 11</a></li>
+            <li class="footer-auth__item"><a href="tel:+380961111111" class="footer-auth__link">+38 096 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>
@@ -391,7 +393,7 @@
         <b class="footer-social__title">приєднуйтесь</b>
         <ul class="footer-media__list">
 
-          <li class="footer-media__item">            
+          <li class="footer-media__item">
             <a class="footer-media__link " href="#" rel="noopener noreferrer nofollow" target="_blank">
               <svg class="footer-media__icon" width="20" height="20">
                 <use href="./images/icons.svg.svg#icon-instagram"> </use>
@@ -440,60 +442,61 @@
   <!-- Modal -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button class="is-hidden-modal" data-modal-close>
-        <svg class="icon-close-modal" width="11" height="11">
+      <button class="modal__is-hidden" data-modal-close>
+        <svg class="modal__close" width="11" height="11">
           <use href="./images/icons.svg.svg#icon-Vector-6"></use>
         </svg>
       </button>
 
-      <h3 class="title-modal">Залиште свої дані, ми вам передзвонимо</h3>
-      <form class="modal-form">
-        <ul class="group-modal">
-          <li class="item-group-modal">
-            <label for="name" class="label">Ім'я</label>
-            <div class="input-wrap">
-              <input type="text" class="form-input" name="name" id="name">
-              <svg class="icon-name" height="12" width="12">
+      <h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
+      <form class="modal__form">
+        <ul class="modal__group">
+          <li class="modal__item">
+            <label for="name" class="modal__label">Ім'я</label>
+            <div class="modal__wrap">
+              <input type="text" class="modal__input" name="name" id="name">
+              <svg class="modal__icon" height="12" width="12">
                 <use href="./images/icons.svg.svg#icon-Vector-1"></use>
               </svg>
             </div>
 
           </li>
-          <li class="item-group-modal">
-            <label for="tel" class="label">Телефон</label>
-            <div class="input-wrap">
-              <input type="tel" class="form-input" name="tel" id="tel">
-              <svg class="icon-name" height="12" width="12">
+          <li class="modal__item">
+            <label for="tel" class="modal__label">Телефон</label>
+            <div class="modal__wrap">
+              <input type="tel" class="modal__input" name="tel" id="tel">
+              <svg class="modal__icon" height="12" width="12">
                 <use href="./images/icons.svg.svg#icon-Vector-2"></use>
               </svg>
             </div>
           </li>
-          <li class="item-group-modal">
-            <label for="mail" class="label">Пошта</label>
-            <div class="input-wrap">
-              <input type="email" class="form-input" name="mail" id="mail">
-              <svg class="icon-name" height="12" width="12">
+          <li class="modal__item">
+            <label for="mail" class="modal__label">Пошта</label>
+            <div class="modal__wrap">
+              <input type="email" class="modal__input" name="mail" id="mail">
+              <svg class="modal__icon" height="12" width="12">
                 <use href="./images/icons.svg.svg#icon-Vector-3"></use>
               </svg>
             </div>
           </li>
-          <li class=" item-group-modal comment">
-            <label for="comment" class="label">Коментар</label>
-            <textarea name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
+          <li class=" modal__item modal__comment">
+            <label for="comment" class="modal__label">Коментар</label>
+            <textarea class="modal__textarea" name="comment" id="comment" rows="10"
+              placeholder="Введіть текст"></textarea>
           </li>
         </ul>
 
-        <label class="checkbox-label">
-          <input type="checkbox" class="checkbox" name="contract" value="contract" id="contract">
-          <svg class="icon-checkbox" width="16" height="15">
-            <use class="icon-border" href="./images/icons.svg.svg#icon-Vector-4"></use>
-            <use class="check" href="./images/icons.svg.svg#icon-icon-check"></use>
+        <label class="checkbox__label">
+          <input type="checkbox" class="checkbox__input" name="contract" value="contract" id="contract">
+          <svg class="checkbox__icon" width="16" height="15">
+            <use class="checkbox__border" href="./images/icons.svg.svg#icon-Vector-4"></use>
+            <use class="checkbox__check" href="./images/icons.svg.svg#icon-icon-check"></use>
           </svg>
-          <b class="contract"> Погоджуюся з розсилкою та приймаю <a class="link-contract" href="#">Умови
+          <b class="contract"> Погоджуюся з розсилкою та приймаю <a class="contract__link" href="#">Умови
               договору</a></b>
-
         </label>
-        <button class="btn-sumbit-modal" type="submit">Відправити</button>
+
+        <button class="btn-sumbit" type="submit">Відправити</button>
       </form>
 
     </div>
