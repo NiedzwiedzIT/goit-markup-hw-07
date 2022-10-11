@@ -50,9 +50,12 @@
 }
 
 .main-nav__link--current {
+    
     position: relative;
+     
 
     color: var(--akcent-color);
+    
 
     &::after {
             content: '';
@@ -67,10 +70,7 @@
 }
 
  
-.main-nav__link:hover,
-.main-nav__link:focus {
-    color: var(--akcent-color);
-}
+ 
 
 .main-nav__item {
     display: block;
@@ -91,6 +91,11 @@
     text-decoration: none;
 
     transition: var(--duration) var(--timing-function);
+
+        &:hover,
+        &:focus {
+            color: var(--akcent-color);
+        }
 }
 
 /* Header auth */

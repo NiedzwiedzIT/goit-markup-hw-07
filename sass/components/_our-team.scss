@@ -67,6 +67,10 @@
     margin-bottom: auto;
     margin-top: auto;
 }
+.section__image {
+    display: block;
+    max-width: 100%;
+}
 
 .section__info {
     padding-top: 30px;
@@ -87,7 +91,6 @@
             margin-right: 30px;
         }
 }
-
  
 .section__name {
     margin-bottom: 10px;

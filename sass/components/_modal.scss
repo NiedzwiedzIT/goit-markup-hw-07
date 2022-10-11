@@ -99,12 +99,12 @@
     height: 40px;
     padding-left: 42px;
     cursor: pointer;
+        &:hover,
+        &:focus {
+            border-color: var(--akcent-color);
+        }
 }
-
-.modal__input:hover,
-.modal__input:focus {
-    border-color: var(--akcent-color);
-}
+ 
 
 .modal__label {
     color: var(--secondary-teks-color);
@@ -148,12 +148,13 @@
     cursor: pointer;
 
     transition: var(--duration) var(--timing-function);
-}
 
-.modal__textarea:hover,
-.modal__textarea:focus {
-    border-color: var(--akcent-color);
+        &:hover,
+        &:focus {
+            border-color: var(--akcent-color);
+        }
 }
+ 
 
 .checkbox__input {
     -webkit-appearance: none;

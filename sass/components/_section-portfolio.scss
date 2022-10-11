@@ -22,8 +22,9 @@
 
 .radio__item {
     margin-right: 8px;
-}
 
-.radio__item:nth-child(5) {
-    margin-right: 0;
+    &:nth-child(5) {
+            margin-right: 0;
+        }
 }
+ 

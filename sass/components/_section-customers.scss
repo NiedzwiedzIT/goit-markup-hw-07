@@ -20,13 +20,14 @@
     fill: var(--border-client-icon);
 
     transition: var(--duration) var(--timing-function);
-}
 
-.section-customers__link:hover,
-.section-customers__link:focus {
-    fill: var(--akcent-color);
-    border-color: var(--akcent-color);
+        &:hover,
+        &:focus {
+            fill: var(--akcent-color);
+            border-color: var(--akcent-color);
+        }
 }
+ 
 
 .section-customers__icon {
     display: block;

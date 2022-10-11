@@ -2,12 +2,15 @@
     display: block;
 }
 
-.section__port-overlay {
+.section__port{
+    &-overlay {
     position: relative;
     overflow: hidden;
+    }
 }
 
-.section__text-overlay {
+.section__text {
+    &-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -24,6 +27,7 @@
     transform: translateY(100%);
     transition: transform var(--duration) var(--timing-function),
         opacity var(--duration) var(--timing-function);
+    }
 }
 
 .portfolio__list .portfolio__link:hover .section__text-overlay,
