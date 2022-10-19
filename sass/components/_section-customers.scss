@@ -3,18 +3,10 @@
 
 .section-customers__list {
     display: flex;
-
-    @media screen and (min-width:480px){
-        display: flex;
-        flex-wrap: wrap;       
-        margin: -15px;
-    }
 }
 
-.section-customers__item {
-        // &:not(:last-child) {
-    //         margin-right: 30px;
-    //     }
+.section-customers__item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .section-customers__link {
@@ -29,19 +21,13 @@
 
     transition: var(--duration) var(--timing-function);
 
-    &:hover,
-    &:focus {
-        fill: var(--akcent-color);
-        border-color: var(--akcent-color);        
-    }
-
-@media screen and (min-width:480px) {
-        flex-basis: calc((100% - 4 * 15px) / 2);    
-        margin: 15px;  
-        width: 210px;
-    }
-        
+        &:hover,
+        &:focus {
+            fill: var(--akcent-color);
+            border-color: var(--akcent-color);
+        }
 }
+ 
 
 .section-customers__icon {
     display: block;
