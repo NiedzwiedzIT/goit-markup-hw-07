@@ -9,6 +9,7 @@
 .main-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   @media screen and (min-width: 768px) {
     justify-content: space-between;
@@ -31,7 +32,7 @@
 }
 
 .main-nav__logo {
-  //   margin-right: 93px;
+  padding: 16px 15px;
 
   color: var(--akcent-color);
   font-family: 'Raleway', sans-serif;
@@ -40,13 +41,7 @@
   line-height: 1.19;
   text-decoration: none;
 
-  //   @media screen and (min-width: 480px) {
-  //     padding: 26px 0;
-  //   }
-  //   @media screen and (min-width: 768px) {
-  //     padding: 26px 0;
-  //   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     padding: 0;
   }
 }
